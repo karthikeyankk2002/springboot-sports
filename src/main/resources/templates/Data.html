@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	  		<table border="2">
+  <thead>
+    <tr>
+		 
+      <th >Name</th>
+      <th >Phone</th>
+      <th >Email</th>
+      <th >Message</th>
+    
+    </tr>
+  </thead>
+  <tbody>
+    <tr th:each="s:${sol}">
+    
+      <td th:text="${s.name}"></td>
+      <td th:text="${s.phone}"></td>
+      <td th:text="${s.email}"></td>
+     <td th:text="${s.message}"></td>
+      
+    </tr>
+   
+  </tbody>
+</table>
+   
+   
+
+</body>
+</html>
